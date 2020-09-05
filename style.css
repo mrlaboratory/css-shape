@@ -1,0 +1,62 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	
+	
+}
+body{
+	min-height:100vh;
+	position:realtive;
+	justify-content:center;
+	align-items:center;
+	display:flex;		
+	animation:animA 5s infinite;
+}
+.shape{
+	width:98%;
+	height:98%;
+	position:absolute;
+	background:#2c3b45;
+	border-radius:10px;
+	
+	
+	
+}
+
+.star{
+	width:100px;
+	height:100px;
+	position:absolute;
+	margin:10px;
+	animation:animB 5s infinite;
+	border-radius:50%;
+	background:red;
+	margin:0 auto;
+    
+	
+	
+	
+	
+	
+}
+
+@keyframes animA{
+	0%{background:   linear-gradient(#f56c0a,#0af512,#0a12f5,#f50a8f);}
+	25%{background:  linear-gradient(#0af512,#0a12f5,#f50a8f,#f56c0a);}
+	50%{background:  linear-gradient(#0a12f5,#f50a8f,#f56c0a,#0af512);}
+	75%{background:  linear-gradient(#f50a8f,#f56c0a,#0af512,#0a12f5);}
+	100%{background: linear-gradient(#f56c0a,#0af512,#0a12f5,#f50a8f);}
+	
+	
+}
+
+@keyframes animB{
+	0%{left:0%;top:0%;}
+	25%{left:50%;top:0%;}
+	50%{left:50%;top:50%;}
+    75%{left:0%;top:50%;} 
+	100%{left:0%;top:0%;} 
+	
+	
+}
